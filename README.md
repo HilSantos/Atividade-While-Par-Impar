@@ -9,27 +9,27 @@ using System.Threading.Tasks;
 
 namespace Ativ.While_Par_Impar
 {
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            int op, cont, numero, i = 1;
-            {
-                Console.WriteLine("Digite o numero: ");
-                numero = Convert.ToInt32(Console.ReadLine());
-                {
-                    while (i <= 1)
-                    {
-                        Console.WriteLine($"É PAR");
-                        Console.WriteLine($"É IMPAR");
-                        i++
-                    }
+public class Program
+{
+static void Main(string[] args)
+{
+int op, cont, numero, i = 1;
+{
+Console.WriteLine("Digite o numero: ");
+numero = Convert.ToInt32(Console.ReadLine());
+{
+while (i <= 1)
+{
+Console.WriteLine($"É PAR");
+Console.WriteLine($"É IMPAR");
+i++
+}
 
-                    Console.ReadKey();
-                }
+Console.ReadKey();
+}
 
-            }
-        }
-    }
+}
+}
+}
 }
 
