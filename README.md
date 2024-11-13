@@ -13,23 +13,25 @@ public class Program
 {
 static void Main(string[] args)
 {
-int op, cont, numero, i = 1;
-{
-Console.WriteLine("Digite o numero: ");
-numero = Convert.ToInt32(Console.ReadLine());
-{
-while (i <= 1)
-{
-Console.WriteLine($"É PAR");
-Console.WriteLine($"É IMPAR");
-i++
-}
+            int numero;
 
-Console.ReadKey();
-}
+  Console.Write("Digite um número (0 para sair): ");
+            numero = int.Parse(Console.ReadLine());
 
-}
-}
-}
+  while (numero != 0)
+            {
+                if (numero % 2 == 0)
+                    Console.WriteLine("O número é par.");
+                else
+                    Console.WriteLine("O número é ímpar.");
+
+  Console.Write("Digite um número (0 para sair): ");
+                numero = int.Parse(Console.ReadLine());
+            }
+
+  Console.WriteLine("Programa encerrado.");
+            Console.ReadKey();
+        }
+    }
 }
 
